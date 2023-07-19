@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .app-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .task-input {
+      display: inline-block;
+      width: 70%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .add-button {
+      display: inline-block;
+      width: 25%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background-color: #4caf50;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    .delete-button {
+      padding: 6px 12px;
+      font-size: 14px;
+      border: none;
+      background-color: #e74c3c;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+  <div class="app-container" align="center">
+    <input type="text" id="inputTask" class="task-input" placeholder="Enter a task">
+    <button onclick="addTask()" class="add-button">Add Task</button>
+  </div>
+    <ul id="taskList"></ul>
+  
+  <script src="app.js"></script>
+</body>
+</html>
